@@ -1,11 +1,13 @@
-import { Application, Request, Response } from 'express';
-import express = require('express');
+import express, { Application, Request, Response } from 'express';
 
 const app: Application = express();
 const PORT: number = 3000;
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Hello, your Node.js and TypeScript server is running!');
+    res.status(200).json({
+        message: 'Welcome to the Express server!',
+        error: false
+    });
 });
 
 app.listen(PORT, () => {
