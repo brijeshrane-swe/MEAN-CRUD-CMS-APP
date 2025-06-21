@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import AppError from "../utils/AppError.js";
+import {NODE_ENV} from "../configs/config.js";
 
 /**
  * Global error handling middleware for Express.
@@ -32,8 +33,8 @@ const errorHandler = (
         status: status,
         message: err.message,
         // In development, provide more error details; in production, keep it simple for security
-        stack: process.env.NODE_ENV === 'development' ? err.stack : undefined,
-        error: process.env.NODE_ENV === 'development' ? err : undefined,
+        stack: NODE_ENV === 'development' ? err.stack : undefined,
+        error: NODE_ENV === 'development' ? err : undefined,
     });
 }
 
