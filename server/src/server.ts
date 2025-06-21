@@ -2,7 +2,7 @@
 import express, { Application, Request, Response, NextFunction } from 'express';
 import bodyParser from 'body-parser';
 import { PORT } from "./configs/config.js";
-import './db'; // Import and initialize the database connection pool (no direct export needed here)
+import './db/db.js'; // Import and initialize the database connection pool (no direct export needed here)
 import studentRoutes from "./routes/student_routes.js";
 import errorHandler from "./middlewares/error_middleware.js";
 
