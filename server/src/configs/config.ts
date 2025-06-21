@@ -9,14 +9,14 @@ dotenv.config();
  */
 export const DB_CONFIG = {
     host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USER || 'root', // Correctly using 'user'
+    user: process.env.DB_USER || 'root',
     password: process.env.DB_PASSWORD || '',
     database: process.env.DB_DATABASE || 'college_db',
     port: parseInt(process.env.DB_PORT || '3306', 10),
 };
 
 /**
- * The port number on which the Express server will listen.
+ * The port number on which the Express server will listen to.
  * Fetched from environment variables.
  */
 export const PORT: number = parseInt(process.env.SERVER_PORT || '3000', 10);
