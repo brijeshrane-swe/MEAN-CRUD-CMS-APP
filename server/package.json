@@ -1,11 +1,12 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "MEAN Stack: MySQL + ExpressJS + AngularJS + NodeJS",
-  "main": "index.js",
+  "description": "MEAN Stack: MySQL + ExpressJS + AngularJS + NodeJS\nA College Management System backend following MVC in TypeScript.",
+  "main": "./src/server.js",
+  "type": "module",
   "scripts": {
-    "start": "node dist/server.js",
-    "build": "tsc",
+    "start": "node ./src/server.js",
+    "build": "npx tsc",
     "dev": "nodemon"
   },
   "author": "brijesh-rane",
@@ -20,6 +21,7 @@
   },
   "dependencies": {
     "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mysql2": "^3.14.1"
   }
