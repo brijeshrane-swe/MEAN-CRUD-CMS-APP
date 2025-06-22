@@ -1,5 +1,5 @@
-import pool from "../db/db.js";
-import { IStudent, ICreateStudent, IUpdateStudent } from "../types/student_interface.js";
+import pool from "../db/db_connection";
+import { IStudent, ICreateStudent, IUpdateStudent } from "../types/student_interface";
 import { RowDataPacket, ResultSetHeader } from "mysql2";
 
 /**

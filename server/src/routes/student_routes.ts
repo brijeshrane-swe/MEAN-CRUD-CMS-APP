@@ -1,5 +1,5 @@
 import { Router } from "express";
-import StudentController from "../controllers/student_controller.js";
+import StudentController from "../controllers/student_controller";
 
 /**
  * Creates an Express Router for student-related API endpoints.

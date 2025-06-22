@@ -1,6 +1,6 @@
-import {ICreateStudent, IStudent, IUpdateStudent} from "../types/student_interface.js";
-import StudentModel from "../models/student_model.js";
-import AppError from "../utils/AppError.js";
+import {ICreateStudent, IStudent, IUpdateStudent} from "../types/student_interface";
+import StudentModel from "../models/student_model";
+import AppError from "../utils/AppError";
 
 /**
  * StudentService class encapsulates the business logic related to student management.

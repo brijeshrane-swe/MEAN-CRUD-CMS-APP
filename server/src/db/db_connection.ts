@@ -1,5 +1,5 @@
 import mysql2 from "mysql2/promise";
-import { DB_CONFIG } from "../configs/config.js";
+import { DB_CONFIG } from "../configs/config";
 
 /**
  * Creates a MySQL connection pool.

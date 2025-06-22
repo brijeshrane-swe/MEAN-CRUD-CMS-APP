@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
-import { IStudent } from "../types/student_interface.js";
-import StudentService from "../services/student_service.js";
-import AppError from "../utils/AppError.js";
+import { IStudent } from "../types/student_interface";
+import StudentService from "../services/student_service";
+import AppError from "../utils/AppError";
 
 /**
  * StudentController class handles incoming HTTP requests related to student management.

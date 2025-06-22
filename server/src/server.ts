@@ -1,10 +1,10 @@
 // Create an Express application instance
 import express, { Application, Request, Response, NextFunction } from 'express';
 import bodyParser from 'body-parser';
-import { PORT } from "./configs/config.js";
-import './db/db.js'; // Import and initialize the database connection pool (no direct export needed here)
-import studentRoutes from "./routes/student_routes.js";
-import errorHandler from "./middlewares/error_middleware.js";
+import { PORT } from "./configs/config";
+import './db/db_connection'// Import and initialize the database connection pool (no direct export needed here)
+import studentRoutes from "./routes/student_routes";
+import errorHandler from "./middlewares/error_middleware";
 
 const app: Application = express();
 
